@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+<h1 class="btn btn-danger">Image Recognition Using Teachable Machine</h1>
+      <br><br>
+
+      <p style="font-size: 22px; font-family: 'Pattaya', sans-serif;">Model is trained to identify the following objects: </p>
+<h3>mom<br><br><hr>dad<hr><br><hr>daughter<hr><br></h3>
+
+      <label>Webcam View - </label>
+<div id="camera"></div>
+      <br><br>
+<button onclick="click1()">take a picture</button>
+      <br><br>
+<div id="result"></div>
+      <br><br>
+<button onclick="img()">check image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object :<span id="o_name"></span>  </p>
+      <p style="font-size: 22px;">Accuracy : <span id="o_accuracy"></span> </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
