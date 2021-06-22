@@ -12,3 +12,12 @@ classifier=ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/3
 function model() {
     console.log("model loaded")
 }
+function img() {
+    i1=document.getElementById("captured_image")
+    classifier.classify(i1,result1)
+}
+function result1(results) {
+    console.log(results);
+    document.getElementById("o_name").innerHTML=results[0].label;
+    document.getElementById("o_accuracy").innerHTML=results[0].confidence.tofixed(3);
+}
